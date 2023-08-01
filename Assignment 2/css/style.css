@@ -1,0 +1,143 @@
+/* CSS styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.75;
+    margin: 25px;
+    padding: 0;
+}
+/* Header styles */
+header {
+    height:9.2em;
+    margin-top:5px;
+    color: #000000;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 60%;/* Header layout with two columns */
+}
+h1{
+    font-family: 'Pacifico', cursive;/* Apply the 'Pacifico' font to h1 elements */
+}
+h2{
+    font-family: 'Lumanosimo', cursive;/* Apply the 'Lumanosimo' font to h2 elements */
+}
+header div {
+    display: grid;
+    grid-template-rows: 30% 30%; /* Header layout with two rows for logo and heading */
+    align-items: center;
+    justify-content: center;
+}
+header div img{
+    height:100%;
+    width:100%;/* Make the logo image occupy its container with full width and height */
+}
+header nav {
+    text-align: center; /* Center the navigation links for smaller screens */
+    margin-top: 10px; /* Add some spacing above the navigation links for better separation */
+}
+header nav ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+    display: flex;
+    justify-content: center;/* Center align the navigation links within the header */
+}
+
+header nav li {
+    display: block; /* Display the navigation links as blocks for better alignment */
+    margin-bottom: 10px; /* Add spacing between the navigation links for better readability */
+    font-size: 17px;
+}
+header nav a {
+    color: #333333;
+    text-decoration: none;
+    padding:30px;/* Add padding to the navigation links for better spacing */
+}
+
+header nav a:hover {
+    color: GREY;/* Change the color of navigation links on hover */
+}
+/* Main content styles */
+main {
+    padding:20px;
+    background-color: #f4f4f4;
+}
+/* Section 1 styles */
+.section1{
+    margin:10px;/* Add margin to section 1 for spacing */
+
+}
+/* Section 2 styles */
+.section2{
+    text-align:center;/* Add margin to section 2 for spacing */
+    margin:25px;
+}
+/* Section 3 styles */
+.section3{
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap:20px; /* Two-column layout for section 3 with a gap between columns */
+}
+/* Row styles */
+.row{
+    display: grid;
+    grid-template-columns: 50% 50%;/* Two-column layout for rows within section 3 */
+}
+/* Image styles */
+main section img{
+    width:100%;
+    border-radius: 25px;/* Rounded corners for images within sections */
+}
+/* Styles for sections with class "about-us" and "opening-hours" */
+.about-us,
+.opening-hours {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 10px;/* Add margin to sections for spacing */
+}
+/* Footer styles */
+footer {
+    background-color: grey;
+    color: #333333;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;/* Two-column layout for footer content */
+}
+footer section{
+    margin-top:20px; /* Add margin to footer sections for spacing */
+}
+footer section div{
+    display:inline;
+    margin-right:20px;
+    margin-left:20px;/* Arrange footer links horizontally with some spacing */
+}
+footer section div:hover{
+    color:white;/* Change the color of footer links on hover */
+}
+@media screen and (max-width: 1100px) {
+    .section3 {
+        grid-template-columns: 1fr; /* Change to a single column layout for tablet-sized screens */
+    }
+    header nav {
+        margin-top: 5px; /* Reduce the margin above the navigation links for smaller screens */
+    }
+    header nav li{
+        font-size:10px;
+    }
+    header nav a {
+        padding: 5px; /* Reduce the padding of the links for smaller screens */
+    }
+    .about-us h2,
+    .opening-hours h2 {
+        font-size: 24px; /* Adjust the font size of section headings for tablet-sized screens */
+    }
+
+    .about-us p {
+        font-size: 16px; /* Adjust the font size of the "About Us" content for tablet-sized screens */
+    }
+
+    .opening-hours table {
+        font-size: 16px; /* Adjust the font size of the opening hours table for tablet-sized screens */
+    }
+}
